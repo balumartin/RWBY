@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;    
+}
+.nav li{ 
+    text-align: center;
+    border: 0.5px white solid;
+    float:left;
+    width: 24.9999%;
+    padding: 15px 0 15px 0;
+}
+.nav li a{
+    color: white;
+    text-decoration: none;    
+}
+.nav li::after{    
+    content:'';
+    clear:both;
+    display: table;
+}
