@@ -7,6 +7,8 @@
 body{
     background-color: black;
     color: white;
+    width: 1000px;
+    height: auto;
 }
 .grid-container{            
     max-width: 1000px;
@@ -26,14 +28,16 @@ body{
     /*grid-area:  1 / 1 / 4 / 4;*/
 }
 .RWBY{
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 .nav{
     grid-column: span 4;
 }
 .content{
-    grid-column: span 4;            
+    grid-column: span 4; 
+    width: 100%;
+    height: auto;           
 }
 .nav li{ 
     text-align: center;
