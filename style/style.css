@@ -10,7 +10,7 @@ body{
     color: white;
     height: auto;
     max-width: 1000px;
-    min-width: 300px;
+    min-width: 200px;
     width:100%;
     margin: 0 auto;
     margin-bottom: 50px;
@@ -18,6 +18,9 @@ body{
 #header img{
     width: 100%;
     height: auto;
+}
+#header .mobil{
+    display: none;
 }
 div{
     display:block;
@@ -31,7 +34,6 @@ div{
     text-align: center;
     font-size: 34px;    
     padding: 15px 0 15px 0;
-    margin-bottom:20px;
 }
 .col1{
     border: 0.2px rgba(255,255,255,0.1) solid;
@@ -70,7 +72,7 @@ div{
     width: auto;
     height: auto;
 }
-@media (max-width:1000px){
+@media (max-width:850px){
     .grid2{
         font-size: 13px;
         font-family: 'Roboto', sans-serif;
@@ -80,6 +82,9 @@ div{
         grid-template-columns: repeat(12,1fr);        
         gap: 20px;
         font-weight: 100;  
+    }
+    #header .mobil{
+        display: none;
     }
     .col2{
         width: 100%;
@@ -100,6 +105,11 @@ div{
         background-image: url("../img/header_mobil.png") no-repeat;
         display:none;
     }
+    #header .mobil{
+        display: block;
+        width: 100%;
+    }
+    
     .grid1{
         max-width: 100%;
         margin: 0 auto;
